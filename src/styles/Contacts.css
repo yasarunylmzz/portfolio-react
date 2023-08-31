@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  background-color: black;
+  height: 20vh;
+}
+
+.github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: start;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 10px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  column-gap: 5px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-instagram {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkedin-instagram .buttons {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  width: 500px;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 10px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  column-gap: 5px;
+  cursor: pointer;
+}
+.button2 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 10px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+  column-gap: 5px;
+  cursor: pointer;
+}
+.button1:hover {
+  background: linear-gradient(to right, #f6d365 0%, #cd486b 100%);
+}
+
+.button2:hover {
+  background: linear-gradient(to right, #2041fd 0%, #1d99d3 100%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@media only screen and (max-width: 800px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+  }
+  .github {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    width: 50%;
+  }
+
+  .linkedin-instagram .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Alt alta sıralanan butonların stilleri */
+  .button1,
+  .button2 {
+    width: 100%;
+  }
+}
